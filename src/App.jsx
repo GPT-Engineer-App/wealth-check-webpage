@@ -7,6 +7,7 @@ import Layout from "./layouts/sidebar";
 import Index from "./pages/Index.jsx";
 import CalculatorPage from "./pages/CalculatorPage.jsx";
 import ResultPage from "./pages/ResultPage.jsx";
+import FinancialWealthCheck from "./pages/FinancialWealthCheck.jsx"; // Import the new page
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => {
               <Route index element={<Index />} />
               <Route path="calculator" element={<CalculatorPage />} />
               <Route path="result" element={<ResultPage />} />
+              <Route path="financial-wealth-check" element={<FinancialWealthCheck />} /> {/* Add the new route */}
             </Route>
           </Routes>
         </Router>

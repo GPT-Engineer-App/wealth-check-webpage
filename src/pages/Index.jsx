@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const tools = [
   { name: "Borrowing Capacity Calculator", path: "/calculator" },
+  { name: "Financial Wealth Check", path: "/financial-wealth-check" }, // Added new menu item
   { name: "Loan Repayment Calculator", path: "/loan-repayment" },
   { name: "Investment Property Calculator", path: "/investment-property" },
   { name: "Interest Rate Comparison Tool", path: "/interest-rate-comparison" },
