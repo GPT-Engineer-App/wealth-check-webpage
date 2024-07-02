@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Briefcase, Tools } from "lucide-react";
+import { Home, Briefcase, Tool } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar";
 import Index from "./pages/Index.jsx";
@@ -25,7 +25,7 @@ export const navItems = [
   {
     title: "Financial Tools",
     to: "/financial-tools",
-    icon: <Tools className="h-4 w-4" />,
+    icon: <Tool className="h-4 w-4" />,
   },
 ];
 
