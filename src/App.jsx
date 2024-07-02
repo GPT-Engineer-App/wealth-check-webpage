@@ -1,12 +1,11 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Calculator } from "lucide-react";
+import { Home, Briefcase, Tools } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar";
 import Index from "./pages/Index.jsx";
-import CalculatorPage from "./pages/CalculatorPage.jsx";
-import ResultPage from "./pages/ResultPage.jsx";
+
 import FinancialWealthCheck from "./pages/FinancialWealthCheck.jsx";
 import FinancialTools from "./pages/FinancialTools.jsx"; // Import the new page
 
@@ -19,9 +18,14 @@ export const navItems = [
     icon: <Home className="h-4 w-4" />,
   },
   {
-    title: "Calculator",
-    to: "/calculator",
-    icon: <Calculator className="h-4 w-4" />,
+    title: "Financial Wealth Check",
+    to: "/financial-wealth-check",
+    icon: <Briefcase className="h-4 w-4" />,
+  },
+  {
+    title: "Financial Tools",
+    to: "/financial-tools",
+    icon: <Tools className="h-4 w-4" />,
   },
 ];
 
@@ -34,10 +38,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Index />} />
-              <Route path="calculator" element={<CalculatorPage />} />
-              <Route path="result" element={<ResultPage />} />
               <Route path="financial-wealth-check" element={<FinancialWealthCheck />} />
-              <Route path="financial-tools" element={<FinancialTools />} /> {/* Add the new route */}
+              <Route path="financial-tools" element={<FinancialTools />} />
             </Route>
           </Routes>
         </Router>
