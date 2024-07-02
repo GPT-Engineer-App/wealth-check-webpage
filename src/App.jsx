@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Calculator } from "lucide-react";
+import { Home, Calculator, CheckCircle } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar";
 import Index from "./pages/Index.jsx";
@@ -19,8 +19,13 @@ export const navItems = [
     icon: <Home className="h-4 w-4" />,
   },
   {
-    title: "Calculator",
-    to: "/calculator",
+    title: "Financial Wealth Check",
+    to: "/financial-wealth-check",
+    icon: <CheckCircle className="h-4 w-4" />,
+  },
+  {
+    title: "Financial Tools",
+    to: "/financial-tools",
     icon: <Calculator className="h-4 w-4" />,
   },
 ];
