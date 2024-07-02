@@ -20,7 +20,7 @@ const Index = () => {
           </Link>
         </Card>
         <Card className="hover:shadow-lg transition-shadow">
-          <Link to="/calculator">
+          <Link to="/financial-tools">
             <CardHeader>
               <CardTitle>Financial Tools</CardTitle>
             </CardHeader>
